@@ -52,6 +52,8 @@ public class ProtegeProperties extends Properties {
     
     public static final String DIFF_VIEW_CATEGORY = PROTEGE_PREFIX + "differencecategory";
 
+    public static final String VIBE_VIEW_CATEGORY = PROTEGE_PREFIX + "vibecategory";
+
 
     private static ProtegeProperties instance;
 

@@ -350,7 +350,7 @@
         <index value="E"/>
         <defaultViewConfigFileName value="viewconfig-datapropertiestab.xml"/>
     </extension>
-    
+
     <!-- Annotations properties tab -->
 
     <extension id="OWLAnnotationsPropertiesTab"
@@ -607,7 +607,7 @@
         <navigates value="@org.protege.individualcategory"/>
         <help value="http://protegeproject.github.io/protege/views/instances"/>
     </extension>
-    
+
     <extension id="OWLInferredMembersList"
                point="org.protege.editor.core.application.ViewComponent">
         <label value="Direct instances (inferred)"/>
@@ -1280,7 +1280,7 @@
         <label value="Reasoner"/>
         <class value="org.protege.editor.owl.ui.inference.TabbedReasonerPreferencesPanel"/>
     </extension>
-    
+
     <extension id="ui.preferences.reasoner.display"
                point="org.protege.editor.owl.inference_preferences">
         <label value="Displayed inferences"/>
@@ -1429,7 +1429,7 @@
          and replaces them with someValuesFrom restrictions."/>
         <path value="org.protege.editor.owl.menu.Refactor/SlotD-A"/>
         <editorKitId value="OWLEditorKit"/>
-    </extension> 
+    </extension>
 
     <extension id="menu.MoveAxiomsToOntologyAction"
                point="org.protege.editor.core.application.EditorKitMenuAction">
@@ -1438,7 +1438,7 @@
         <toolTip value="Extract/select axioms from an ontology and optionally move them to another ontology"/>
         <path value="org.protege.editor.owl.menu.Refactor/SlotE-A"/>
         <editorKitId value="OWLEditorKit"/>
-    </extension> 
+    </extension>
 
     <!-- Tools menu -->
 
@@ -1468,7 +1468,7 @@
 	<extension id="FolderRepository" point="org.protege.editor.owl.repository">
 		<class value="org.protege.editor.owl.model.library.folder.FolderGroupManager"/>
 	</extension>
-	
+
 	<extension id="FolderRepository" point="org.protege.editor.owl.repository">
 		<class value="org.protege.editor.owl.model.library.folder.ImportByNameManager"/>
 	</extension>
@@ -1530,7 +1530,7 @@
     <!--
 
     <extension id="SPARQLQueryTab">
-               point="org.protege.editor.core.application.WorkspaceTab" 
+               point="org.protege.editor.core.application.WorkspaceTab"
             <label value="SPARQL"/>
             <class value="org.protege.editor.owl.ui.OWLWorkspaceViewsTab"/>
             <editorKitId value="OWLEditorKit"/>
@@ -1552,7 +1552,7 @@
 
 
 	<!-- Explanation Services -->
-	
+
 	<extension id="InconsistentOntologyManager"
 			   point="org.protege.editor.core.application.EditorKitHook">
 	    <class value="org.protege.editor.owl.ui.explanation.io.InconsistentOntologyManager"/>
@@ -1560,7 +1560,7 @@
 	</extension>
 
 
-    <!-- Preferences -->  
+    <!-- Preferences -->
 
     <!-- Ontology prefs -->
 
@@ -1885,4 +1885,36 @@
         <editorKitId value="OWLEditorKit"/>
     </extension>
 
+    <!-- CDEMIR
+    <extension
+            id="ChatbotView"
+            point="org.protege.editor.core.application.ViewComponent">
+        <label value="Vibe Protege Chatbot"/>
+        <class value="org.protege.editor.owl.ui.view.ChatbotViewComponent"/>
+        <category value="@org.protege.ontologycolor"/>
+        <headerColor value="@org.protege.ontologycolor"/>
+        <tooltip value="Chatbot Interface"/>
+    </extension>
+    -->
+    <extension
+            id="ChatbotView"
+            point="org.protege.editor.core.application.ViewComponent">
+        <label value="AI Protege Chat"/>
+        <class value="org.protege.editor.owl.ui.view.ChatbotViewComponent"/>
+        <category value="@org.protege.vibecategory"/>
+        <headerColor value="@org.protege.ontologycolor"/>
+        <tooltip value="Chatbot Interface"/>
+    </extension>
+
+
+    <!-- Add a new workspace tab that will show by default -->
+    <extension
+            id="ChatbotWorkspaceTab"
+            point="org.protege.editor.core.application.WorkspaceTab">
+        <label value="Chatbot"/>
+        <class value="org.protege.editor.owl.ui.workspace.OWLWorkspaceViewsTab"/>
+        <defaultViewConfigFileName value="viewconfig-chattab.xml"/>
+        <!-- Index Z ensures it appears at the end -->
+        <index value="Z"/>
+    </extension>
 </plugin>

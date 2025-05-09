@@ -284,6 +284,9 @@ public class ProtegeApplication implements BundleActivator {
         ProtegeProperties.getInstance().put(ProtegeProperties.ONTOLOGY_VIEW_CATEGORY, "Ontology");
         ProtegeProperties.getInstance().put(ProtegeProperties.QUERY_VIEW_CATEGORY, "Query");
         ProtegeProperties.getInstance().put(ProtegeProperties.DIFF_VIEW_CATEGORY, "Ontology comparison");
+        // Add our new Vibe category
+        ProtegeProperties.getInstance().put(ProtegeProperties.VIBE_VIEW_CATEGORY, "Vibe Protege view");
+
     }
 
 
