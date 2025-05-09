@@ -1,6 +1,6 @@
 # Protege Vibe
 
-Protege Vibe is a revolutionary fork of Protege that transforms knowledge graph engineering by leveraging large language models to automate boilerplate tasks. By integrating advanced AI capabilities, Protege Vibe makes ontology creation and management more intuitive and efficient.
+Protege Vibe is an attempt to automate boilerplate tasks of knowledge engineers.
 
 # Protege Desktop
 
