@@ -15,12 +15,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class LLMService {
+    // TODO We need to load an LLM config file.
     private static final String API_KEY = "token-tentris-upb";
-    // Using the URL from your working curl command
     private static final String BASE_URL = "http://harebell.cs.upb.de:8501/v1";
     private static final String MODEL = "tentris";
-    private static final String COMPLETIONS_ENDPOINT = "/chat/completions";
     private static final String SYSTEM_MESSAGE_CONTENT = "You are a helpful assistant.";
+
+    private static final String COMPLETIONS_ENDPOINT = "/chat/completions";
 
     private final HttpClient httpClient;
     private final ObjectMapper objectMapper;
