@@ -1,3 +1,7 @@
+# Protege Vibe
+
+Protege Vibe is a revolutionary fork of Protege that transforms knowledge graph engineering by leveraging large language models to automate boilerplate tasks. By integrating advanced AI capabilities, Protege Vibe makes ontology creation and management more intuitive and efficient.
+
 # Protege Desktop
 
 [Protege](https://protege.stanford.edu) is a free, open-source ontology editor that supports the latest [OWL 2.0 standard](http://www.w3.org/TR/owl2-overview/). Protege has a pluggable architecture, and many [plugins](https://protegewiki.stanford.edu/wiki/Protege_Plugin_Library) for different functionalities are available.
